@@ -15,8 +15,8 @@
 
     <ImageView
         android:id="@+id/ivHero"
-        android:layout_width="240px"
-        android:layout_height="320px"
+        android:layout_width="@dimen/min_width_image"
+        android:layout_height="@dimen/min_height_image"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="min_width_image">240px</dimen>
+    <dimen name="min_height_image">320px</dimen>
+    <dimen name="lar_width_image">480px</dimen>
+    <dimen name="lar_height_image">640px</dimen>
+</resources>

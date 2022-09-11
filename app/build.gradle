@@ -8,11 +8,13 @@ android {
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.naat.testcoppel"
+        applicationId "com.coppel.test"
         minSdk 24
         targetSdk 32
         versionCode 1
         versionName "1.0"
+
+        buildConfigField "String", "URL_SERV", project.DEV_URL
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

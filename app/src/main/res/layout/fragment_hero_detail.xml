@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/ivHero"
-        android:layout_width="480px"
-        android:layout_height="640px"
+        android:layout_width="@dimen/lar_width_image"
+        android:layout_height="@dimen/lar_height_image"
         android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -56,7 +56,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    android:text="Biography"
+                    android:text="@string/biography"
                     android:textColor="@color/black"
                     android:textSize="19sp"
                     android:textStyle="bold" />
@@ -66,49 +66,49 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    app:detail="Full name" />
+                    app:detail="@string/full_name" />
 
                 <com.coppel.test.presentation.customviews.DetailView
                     android:id="@+id/dvAlterEgos"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    app:detail="Alter egos" />
+                    app:detail="@string/alter_egos" />
 
                 <com.coppel.test.presentation.customviews.DetailView
                     android:id="@+id/dvAliases"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    app:detail="Aliases" />
+                    app:detail="@string/aliases" />
 
                 <com.coppel.test.presentation.customviews.DetailView
                     android:id="@+id/dvBirth"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    app:detail="Place of birth" />
+                    app:detail="@string/place_of_birth" />
 
                 <com.coppel.test.presentation.customviews.DetailView
                     android:id="@+id/dvFirstAppearance"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    app:detail="First appearance" />
+                    app:detail="@string/first_appearance" />
 
                 <com.coppel.test.presentation.customviews.DetailView
                     android:id="@+id/dvPublisher"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    app:detail="Publisher" />
+                    app:detail="@string/publisher" />
 
                 <com.coppel.test.presentation.customviews.DetailView
                     android:id="@+id/dvAlignment"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    app:detail="Alignment" />
+                    app:detail="@string/alignment" />
 
             </LinearLayout>
 
@@ -129,7 +129,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    android:text="Appearance"
+                    android:text="@string/appearance"
                     android:textColor="@color/black"
                     android:textSize="19sp"
                     android:textStyle="bold" />
@@ -139,42 +139,42 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    app:detail="Gender" />
+                    app:detail="@string/gender" />
 
                 <com.coppel.test.presentation.customviews.DetailView
                     android:id="@+id/dvRace"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    app:detail="Race" />
+                    app:detail="@string/race" />
 
                 <com.coppel.test.presentation.customviews.DetailView
                     android:id="@+id/dvHeight"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    app:detail="height" />
+                    app:detail="@string/height" />
 
                 <com.coppel.test.presentation.customviews.DetailView
                     android:id="@+id/dvWeight"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    app:detail="Weight" />
+                    app:detail="@string/weight" />
 
                 <com.coppel.test.presentation.customviews.DetailView
                     android:id="@+id/dvEyeColor"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    app:detail="Eye color" />
+                    app:detail="@string/eye_color" />
 
                 <com.coppel.test.presentation.customviews.DetailView
                     android:id="@+id/dvHairColor"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    app:detail="Hair color" />
+                    app:detail="@string/hair_color" />
 
             </LinearLayout>
 
@@ -195,7 +195,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    android:text="Power stats"
+                    android:text="@string/power_stats"
                     android:textColor="@color/black"
                     android:textSize="19sp"
                     android:textStyle="bold" />
@@ -205,42 +205,42 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    app:detail="Intelligence" />
+                    app:detail="@string/intelligence" />
 
                 <com.coppel.test.presentation.customviews.DetailView
                     android:id="@+id/dvStrength"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    app:detail="Strength" />
+                    app:detail="@string/strength" />
 
                 <com.coppel.test.presentation.customviews.DetailView
                     android:id="@+id/dvSpeed"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    app:detail="Speed" />
+                    app:detail="@string/speed" />
 
                 <com.coppel.test.presentation.customviews.DetailView
                     android:id="@+id/dvDurability"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    app:detail="Durability" />
+                    app:detail="@string/durability" />
 
                 <com.coppel.test.presentation.customviews.DetailView
                     android:id="@+id/dvPower"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    app:detail="Power" />
+                    app:detail="@string/power" />
 
                 <com.coppel.test.presentation.customviews.DetailView
                     android:id="@+id/dvCombat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    app:detail="Combat" />
+                    app:detail="@string/combat" />
 
             </LinearLayout>
 
@@ -261,7 +261,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    android:text="Work"
+                    android:text="@string/work"
                     android:textColor="@color/black"
                     android:textSize="19sp"
                     android:textStyle="bold" />
@@ -271,14 +271,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    app:detail="Occupation" />
+                    app:detail="@string/occupation" />
 
                 <com.coppel.test.presentation.customviews.DetailView
                     android:id="@+id/dvBase"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    app:detail="Base" />
+                    app:detail="@string/base" />
             </LinearLayout>
 
             <LinearLayout
@@ -298,7 +298,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    android:text="Connections"
+                    android:text="@string/connections"
                     android:textColor="@color/black"
                     android:textSize="19sp"
                     android:textStyle="bold" />
@@ -308,14 +308,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    app:detail="Group affiliation" />
+                    app:detail="@string/group_affiliation" />
 
                 <com.coppel.test.presentation.customviews.DetailView
                     android:id="@+id/dvRelatives"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    app:detail="Relatives" />
+                    app:detail="@string/relatives" />
             </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
 

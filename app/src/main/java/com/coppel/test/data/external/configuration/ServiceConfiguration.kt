@@ -1,5 +1,6 @@
 package com.coppel.test.data.external.configuration
 
+import com.coppel.test.BuildConfig
 import com.google.gson.GsonBuilder
 import com.coppel.test.data.external.interceptor.NetworkConnectionInterceptor
 import okhttp3.OkHttpClient
@@ -27,7 +28,7 @@ object ServiceConfiguration {
         }.build()
 
         Retrofit.Builder().apply {
-            baseUrl("https://www.superheroapi.com/api/103128529216665/")
+            baseUrl(BuildConfig.URL_SERV)
 
             addConverterFactory(GsonConverterFactory.create(GsonBuilder().setLenient().create()))
             client(httpClient)

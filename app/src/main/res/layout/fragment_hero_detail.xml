@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.fragments.HeroDetailFragment">
+
+    <ImageView
+        android:id="@+id/ivHero"
+        android:layout_width="480px"
+        android:layout_height="640px"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivHero" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvName">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/clBiography"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/background_white"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tvBiography"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="Biography"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <com.coppel.test.presentation.customviews.DetailView
+                    android:id="@+id/dvFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    app:detail="Full name" />
+
+                <com.coppel.test.presentation.customviews.DetailView
+                    android:id="@+id/dvAlterEgos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    app:detail="Alter egos" />
+
+                <com.coppel.test.presentation.customviews.DetailView
+                    android:id="@+id/dvAliases"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    app:detail="Aliases" />
+
+                <com.coppel.test.presentation.customviews.DetailView
+                    android:id="@+id/dvBirth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    app:detail="Place of birth" />
+
+                <com.coppel.test.presentation.customviews.DetailView
+                    android:id="@+id/dvFirstAppearance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    app:detail="First appearance" />
+
+                <com.coppel.test.presentation.customviews.DetailView
+                    android:id="@+id/dvPublisher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    app:detail="Publisher" />
+
+                <com.coppel.test.presentation.customviews.DetailView
+                    android:id="@+id/dvAlignment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    app:detail="Alignment" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/clAppearance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/background_white"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clBiography">
+
+                <TextView
+                    android:id="@+id/tvAppearance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="Appearance"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <com.coppel.test.presentation.customviews.DetailView
+                    android:id="@+id/dvGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    app:detail="Gender" />
+
+                <com.coppel.test.presentation.customviews.DetailView
+                    android:id="@+id/dvRace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    app:detail="Race" />
+
+                <com.coppel.test.presentation.customviews.DetailView
+                    android:id="@+id/dvHeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    app:detail="height" />
+
+                <com.coppel.test.presentation.customviews.DetailView
+                    android:id="@+id/dvWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    app:detail="Weight" />
+
+                <com.coppel.test.presentation.customviews.DetailView
+                    android:id="@+id/dvEyeColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    app:detail="Eye color" />
+
+                <com.coppel.test.presentation.customviews.DetailView
+                    android:id="@+id/dvHairColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    app:detail="Hair color" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/clPowerStats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/background_white"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clAppearance">
+
+                <TextView
+                    android:id="@+id/tvPowerStats"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="Power stats"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <com.coppel.test.presentation.customviews.DetailView
+                    android:id="@+id/dvIntelligence"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    app:detail="Intelligence" />
+
+                <com.coppel.test.presentation.customviews.DetailView
+                    android:id="@+id/dvStrength"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    app:detail="Strength" />
+
+                <com.coppel.test.presentation.customviews.DetailView
+                    android:id="@+id/dvSpeed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    app:detail="Speed" />
+
+                <com.coppel.test.presentation.customviews.DetailView
+                    android:id="@+id/dvDurability"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    app:detail="Durability" />
+
+                <com.coppel.test.presentation.customviews.DetailView
+                    android:id="@+id/dvPower"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    app:detail="Power" />
+
+                <com.coppel.test.presentation.customviews.DetailView
+                    android:id="@+id/dvCombat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    app:detail="Combat" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/clWork"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/background_white"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clPowerStats">
+
+                <TextView
+                    android:id="@+id/tvWork"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="Work"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <com.coppel.test.presentation.customviews.DetailView
+                    android:id="@+id/dvOccupation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    app:detail="Occupation" />
+
+                <com.coppel.test.presentation.customviews.DetailView
+                    android:id="@+id/dvBase"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    app:detail="Base" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/clConnections"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/background_white"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clWork">
+
+                <TextView
+                    android:id="@+id/tvConnections"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="Connections"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <com.coppel.test.presentation.customviews.DetailView
+                    android:id="@+id/dvAffiliation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    app:detail="Group affiliation" />
+
+                <com.coppel.test.presentation.customviews.DetailView
+                    android:id="@+id/dvRelatives"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    app:detail="Relatives" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
